@@ -32,6 +32,7 @@ El tercer taller del curso sistemas operativos trata sobre las llamadas al siste
 | close | Cerrar el directorio | **fildes:** File descriptor del directorio a cerrar. |
 | munmap | Eliminar dirección en memoria | **addr:** Dirección de memoria. **len:** Tamaño en memoria. |
 
+![][1]
 
 2. Realice la compilación del código fuente adjunto y su ejecución empleando el aplicativo **strace**. Identifique las llamadas al sistema encargadas de enviar y recibir datos a través de la red. A partir de los manuales de Linux en Internet o del sistema operativo explique las llamadas al sistema encontradas y sus parámetros.
 
@@ -39,6 +40,7 @@ El tercer taller del curso sistemas operativos trata sobre las llamadas al siste
 
 ## Referencias
 
-* [1] : 
 * http://man7.org/linux/man-pages/man2/syscalls.2.html  
 * https://jvns.ca/blog/2014/09/18/you-can-be-a-kernel-hacker/
+
+[1]: so-workshop3/A00335472/imgs/ws3I.PNG
