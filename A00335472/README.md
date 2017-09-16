@@ -39,5 +39,6 @@ El tercer taller del curso sistemas operativos trata sobre las llamadas al siste
 
 ## Referencias
 
+* [1] : 
 * http://man7.org/linux/man-pages/man2/syscalls.2.html  
 * https://jvns.ca/blog/2014/09/18/you-can-be-a-kernel-hacker/
