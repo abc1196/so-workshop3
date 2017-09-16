@@ -26,8 +26,12 @@ El tercer taller del curso sistemas operativos trata sobre las llamadas al siste
 
 | Syscall | Uso en ls | Parámetros | 
 |---|---|---|
+| execve | Ejecuta el programa asociado (ls) | **filename:** Nombre del programa a ejecutar, debe ser binario ejecutable . **argv:** Arreglo de strings pasados al programa, el primero suele ser el filename asociado. **envp:** Arreglo de strings con formato key=vaulue, pasados como ambiente al programa. |
 | openat | Abrir el directorio actual | **dirfd:** Descriptor de diretorio. Si directorio es relativo = AT_FDCWD. **pathname:** Dirección de directorio objetivo. **flags:** Flags para indicar el procesamiento del directotrio, por ejemplo, O_DIRECTORY indica que quiere abrir y ver su contenido. |
 | getdents | Leer el contenido del directorio abierto por openat | **fd:** File descriptor que retorna openat. **dirp:** Id del buffer de lectura del directorio. **count:** Tamaño del buffer. |
+| close | Cerrar el directorio | **fildes:** File descriptor del directorio a cerrar. |
+| munmap | Eliminar dirección en memoria | **addr:** Dirección de memoria. **len:** Tamaño en memoria. |
+
 
 2. Realice la compilación del código fuente adjunto y su ejecución empleando el aplicativo **strace**. Identifique las llamadas al sistema encargadas de enviar y recibir datos a través de la red. A partir de los manuales de Linux en Internet o del sistema operativo explique las llamadas al sistema encontradas y sus parámetros.
 
