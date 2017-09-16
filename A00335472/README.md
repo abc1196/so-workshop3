@@ -33,9 +33,8 @@ El tercer taller del curso sistemas operativos trata sobre las llamadas al siste
 | munmap | Eliminar dirección en memoria | **addr:** Dirección de memoria. **len:** Tamaño en memoria. |
 
 ## Capturas strace ls
-![][1]
-![][2]
 
+![][1]
 
 
 2. Realice la compilación del código fuente adjunto y su ejecución empleando el aplicativo **strace**. Identifique las llamadas al sistema encargadas de enviar y recibir datos a través de la red. A partir de los manuales de Linux en Internet o del sistema operativo explique las llamadas al sistema encontradas y sus parámetros.
@@ -64,8 +63,7 @@ El tercer taller del curso sistemas operativos trata sobre las llamadas al siste
 * http://man7.org/linux/man-pages/man2/syscalls.2.html  
 * https://jvns.ca/blog/2014/09/18/you-can-be-a-kernel-hacker/
 
-[1]: imgs/ws3II.PNG
-[2]: imgs/ws3I.PNG
+[1]: imgs/syscalls-ls.png
 [3]: imgs/ws3III.PNG
 [4]: imgs/ws3IV.PNG
 [5]: imgs/ws3V.PNG
