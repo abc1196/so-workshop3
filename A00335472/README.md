@@ -26,7 +26,8 @@ El tercer taller del curso sistemas operativos trata sobre las llamadas al siste
 
 | Syscall | Uso en ls | Parámetros | 
 |---|---|---|
-| openat | Abrir el directorio actual relativo | **dirfd:** Descriptor de diretorio. Si directorio es relativo = AT_FDCWD. ***pathname:** Dirección de directorio objetivo. **flags:** Flags para indicar el procesamiento del directotrio, por ejemplo, O_DIRECTORY indica que quiere abrir y ver su contenido.
+| openat | Abrir el directorio actual | **dirfd:** Descriptor de diretorio. Si directorio es relativo = AT_FDCWD. **pathname:** Dirección de directorio objetivo. **flags:** Flags para indicar el procesamiento del directotrio, por ejemplo, O_DIRECTORY indica que quiere abrir y ver su contenido. |
+| getdents | Leer el contenido del directorio abierto por openat | **fd:** File descriptor que retorna openat. **dirp:** Id del buffer de lectura del directorio. **count:** Tamaño del buffer. |
 
 2. Realice la compilación del código fuente adjunto y su ejecución empleando el aplicativo **strace**. Identifique las llamadas al sistema encargadas de enviar y recibir datos a través de la red. A partir de los manuales de Linux en Internet o del sistema operativo explique las llamadas al sistema encontradas y sus parámetros.
 
